@@ -1,0 +1,82 @@
+full_text= ❰ 
+align=left
+separator=false
+separator_block_width=1
+
+[window]
+command= xdotool getwindowfocus getwindowname 
+label=
+interval=repeat
+
+[separator]
+
+[cpu]
+label=MHz
+command= cat /proc/cpuinfo | grep MHz | cut -d ":" -f2 | sort -n | tail -n1
+interval=5
+
+[separator]
+
+[memory]
+command=$HOME/.config/i3blocks/memory/memory
+label=
+interval=30
+
+#[memory]
+#command=$HOME/.config/i3blocks/memory/memory
+#label=SWAP
+#instance=swap
+#interval=30
+
+[separator]
+
+[disk]
+label= 
+command=df -h | grep "/$" | awk '{print $5}'
+interval=600
+
+[separator]
+
+[volume]
+label=𝅘𝅥𝅮 
+command=pamixer --get-volume-human
+interval=1
+signal=1
+
+[separator]
+
+[conservation_mode]
+command=$HOME/.config/i3blocks/custom/batteryCmode_check.sh
+interval=30
+
+[battery2]
+command= acpi | grep -i "Battery 0" | cut -d ":" -f2 | cut -d "," -f 1,2
+interval=30
+
+[pstate]
+label= 
+command=$HOME/.config/i3blocks/custom/powerprofile_switch.sh
+interval=30
+
+[separator]
+[date]
+label= 
+command=date '+%a, %d %b'
+interval=10
+
+#[separator]
+[time]
+label= 
+command=date '+%H:%M:%S'
+interval=1
+
+[separator]
+
+[red_screen_toggle]
+full_text=⦿
+command=$HOME/.config/i3blocks/custom/red_screen_toggle.sh
+
+#[bluetooth]
+#command=$HOME/.config/i3blocks/custom/bluetooth.sh
+#interval=10
+

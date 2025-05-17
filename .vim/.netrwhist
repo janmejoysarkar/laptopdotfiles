@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/janmejoy/Downloads/Test and Calibration of SUIT'
+let g:netrw_dirhist_3='/home/janmejoy/Downloads'
+let g:netrw_dirhist_2='/home/janmejoy/.config/i3blocks'
+let g:netrw_dirhist_1='/home/janmejoy/Documents/valid_img'
