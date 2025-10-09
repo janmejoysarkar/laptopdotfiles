@@ -250,7 +250,6 @@ default_floating_border normal
 bindsym $mod+F10 exec xrandr --auto
 bindsym $mod+Shift+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+Tab exec rofi -i -show window
-bindsym $mod+Ctrl+l exec loginctl lock-session
 bindsym --release XF86PowerOff exec "systemctl suspend"
 bindsym $mod+F11 exec "brightnessctl set 5%- && notify-send Brightness $(brightnessctl get)"
 bindsym $mod+F12 exec "brightnessctl set +5% && notify-send Brightness $(brightnessctl get)" 
@@ -258,6 +257,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 bindsym --release Print exec "import -window root $HOME/Pictures/screenshots/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && notify-send $(ls -rt $HOME/Pictures/screenshots | tail -1) saved\ in\ Pictures/screenshots" 
 bindsym --release Shift+Print exec "import $HOME/Pictures/screenshots/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && notify-send $(ls -rt $HOME/Pictures/screenshots| tail -1) saved\ in\ Pictures/screenshots"
+bindsym $mod+Ctrl+l exec --no-startup-id /$HOME/.config/i3/turn_off_monitors.sh
 
 
 #startup executables

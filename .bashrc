@@ -19,6 +19,7 @@ alias token='cat $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/github_token.txt'
 alias speed='echo "Speed (eg. 1GHz): "; read SPEED; sudo cpupower frequency-set --max $SPEED'
 alias hibernate='systemctl hibernate'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dt='date; TZ=Asia/Kolkata date; TZ=America/Toronto date'
 
 export PS1="\[\033[38;5;214m\]λ\[\e[00;220m\] \[\e[38;5;223m\]\w\[\033[0m\] \n ❯ "
 #export PS1="\[\e[38;5;216m\]\u\[\e[38;5;220m\]@\[\e[38;5;222m\]\h \[\e[38;5;229m\]\w \[\033[0m\]$ "

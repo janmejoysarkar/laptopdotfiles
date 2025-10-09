@@ -64,7 +64,6 @@ label=
 command=date '+%a, %d %b'
 interval=10
 
-#[separator]
 [time]
 label= 
 command=date '+%H:%M:%S'
@@ -73,10 +72,10 @@ interval=1
 [separator]
 
 [red_screen_toggle]
-full_text=⦿
+full_text=⦿ 
 command=$HOME/.config/i3blocks/custom/red_screen_toggle.sh
 
-#[bluetooth]
-#command=$HOME/.config/i3blocks/custom/bluetooth.sh
-#interval=10
+[separator]
+command=$HOME/.config/i3blocks/custom/dropbox_status.sh
+interval=1
 
