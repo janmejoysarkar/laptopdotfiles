@@ -251,8 +251,8 @@ bindsym $mod+F10 exec xrandr --auto
 bindsym $mod+Shift+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+Tab exec rofi -i -show window
 bindsym --release XF86PowerOff exec "systemctl suspend"
-bindsym $mod+F11 exec "brightnessctl set 5%- && notify-send Brightness $(brightnessctl get)"
-bindsym $mod+F12 exec "brightnessctl set +5% && notify-send Brightness $(brightnessctl get)" 
+bindsym $mod+F11 exec "brightnessctl set 5%- && notify-send -t 700 Brightness $(($(brightnessctl get)*100 / 21333))%"
+bindsym $mod+F12 exec "brightnessctl set +5% && notify-send -t 700 Brightness $(($(brightnessctl get)*100 / 21333))%" 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 bindsym --release Print exec "import -window root $HOME/Pictures/screenshots/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && notify-send $(ls -rt $HOME/Pictures/screenshots | tail -1) saved\ in\ Pictures/screenshots" 
