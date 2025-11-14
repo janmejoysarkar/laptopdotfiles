@@ -1,5 +1,6 @@
 #!/bin/bash
 xrandr --auto
+nitrogen --restore
 mon=$(xrandr --listmonitors | grep Monitors | cut -d ":" -f 2)
 if [ $mon -gt 1 ]
 then

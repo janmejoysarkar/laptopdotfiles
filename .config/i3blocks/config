@@ -38,7 +38,7 @@ interval=600
 [separator]
 
 [volume]
-label=𝅘𝅥𝅮 
+label=𝅘𝅥𝅮  
 command=pamixer --get-volume-human
 interval=1
 signal=1
@@ -66,16 +66,21 @@ interval=10
 
 [time]
 label= 
-command=date '+%H:%M:%S'
-interval=1
+command=date '+%H:%M %Z' 
+interval=2
+
+[india_time]
+label= | 
+command=TZ=Asia/Kolkata date '+%H:%M %Z' 
+interval=2
 
 [separator]
 
-[red_screen_toggle]
-full_text=⦿ 
-command=$HOME/.config/i3blocks/custom/red_screen_toggle.sh
+[monitor]
+command=$HOME/.config/i3blocks/custom/monitor_script.sh
+interval=2
 
-[separator]
+[dropbox]
 command=$HOME/.config/i3blocks/custom/dropbox_status.sh
-interval=1
+interval=2
 
