@@ -7,4 +7,8 @@
 !.vim
 !.bashrc
 !.config/i3*
+!.config/alacritty/*
+!.config/coc/*
+!.config/picom/*
+!.config/rofi/*
 !docs/*
