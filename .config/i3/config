@@ -247,7 +247,7 @@ for_window [class=".*"] split toggle
 default_floating_border normal
 
 #custom keybinds
-bindsym $mod+F10 exec /$HOME/.config/i3/i3_monitor.sh
+bindsym $mod+F10 exec /$HOME/.config/i3/monitor_manager.sh
 bindsym $mod+Shift+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+Tab exec rofi -i -show window
 bindsym --release XF86PowerOff exec "systemctl suspend"
