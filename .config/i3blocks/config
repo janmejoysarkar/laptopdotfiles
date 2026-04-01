@@ -69,16 +69,16 @@ label=
 command=date '+%H:%M %Z' 
 interval=2
 
-[india_time]
-label= | 
-command=TZ=Asia/Kolkata date '+%H:%M %Z' 
-interval=2
-
+#[india_time]
+#label= | 
+#command=TZ=Asia/Kolkata date '+%H:%M %Z' 
+#interval=2
+#
 [separator]
 
-[monitor]
-command=$HOME/.config/i3blocks/custom/monitor_script.sh
-interval=2
+#[monitor]
+#command=$HOME/.config/i3blocks/custom/monitor_script.sh
+#interval=2
 
 [dropbox]
 command=$HOME/.config/i3blocks/custom/dropbox_status.sh
