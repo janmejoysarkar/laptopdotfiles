@@ -5,9 +5,10 @@
 #
 
 STATUS=$(acpi | cut -d ':' -f2 | cut -d ',' -f1)
+STATE_FILE=$HOME/.config/i3blocks/custom/powerstate
 if [[ $STATUS == ' Discharging' ]]
 then
-	powerprofilesctl set power-saver
+	powerprofilesctl set `cat $STATE_FILE`
 	echo "$(powerprofilesctl get)"
 else
 	powerprofilesctl set balanced
