@@ -11,4 +11,5 @@
 !.config/coc/*
 !.config/picom/*
 !.config/rofi/*
+!.config/sway/*
 !docs/*

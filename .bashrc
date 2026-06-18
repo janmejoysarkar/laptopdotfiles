@@ -13,10 +13,12 @@ alias ql='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/visualization_tool
 alias qlt='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/visualization_tools_git/quick_look_tile.py'
 alias qls='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/visualization_tools_git/quick_look_suit.py'
 alias token='cat $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/github_token.txt'
-alias speed='echo "Speed (eg. 1GHz): "; read SPEED; sudo cpupower frequency-set --max $SPEED'
 alias hibernate='systemctl hibernate'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dt='date; TZ=Asia/Kolkata date; TZ=America/Toronto date'
+alias word='wine "/home/janmejoy/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/WINWORD.EXE"'
+alias excel='wine "/home/janmejoy/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/EXCEL.EXE"'
+alias ppt='wine "/home/janmejoy/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/POWERPNT.EXE"'
 export PS1="\[\033[38;5;214m\]λ\[\e[00;220m\] \[\e[38;5;223m\]\w\[\033[0m\] \n ❯ "
 
 TERMINAL='/bin/alacritty'

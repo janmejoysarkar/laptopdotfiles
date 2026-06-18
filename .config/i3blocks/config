@@ -3,12 +3,12 @@ align=left
 separator=false
 separator_block_width=1
 
-#[window]
-#command= xdotool getwindowfocus getwindowname 
-#label=
-#interval=1
+[window]
+command= xdotool getwindowfocus getwindowname 
+label=
+interval=2
 
-#[separator]
+[separator]
 
 [cpu]
 label=MHz
