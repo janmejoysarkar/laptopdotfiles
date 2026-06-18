@@ -181,8 +181,9 @@ bindsym $mod+z move workspace to output left
 
 #add gaps between windows 
 for_window [class="^.*"] border pixel 5 
+gaps inner 10
 #removes border when only 1 window is open
-smart_borders on
+#smart_borders on
 
 # Master-stack layout (kind of)
 default_orientation vertical
